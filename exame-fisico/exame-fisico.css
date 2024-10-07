@@ -50,6 +50,7 @@ textarea{
     height: 80%;
     padding-left: 10px;
     font-size: 16px;
+    resize: none;
 }
 .checkbox-acima{
     background-color: rgb(230, 214, 198);

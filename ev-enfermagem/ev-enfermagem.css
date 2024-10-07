@@ -5,6 +5,7 @@
     width: 500px;
     padding: 5px;
     margin-bottom: 10px;
+    resize: none;
 }
 .textarea-enf:hover{
     background-color: rgb(224, 209, 192);
@@ -47,6 +48,7 @@ input{
     width: 910px;
     padding: 5px;
     margin-bottom: 10px;
+    resize: none;
 }
 .groupfr{
     width: 33%;

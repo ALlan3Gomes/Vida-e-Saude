@@ -28,14 +28,18 @@ textarea {
     padding: 5px 0 0 10px;
     background-color: rgb(230, 214, 198);
     font-size: 17px;
+    resize: none;
 }
 
 textarea:hover {
     background-color: rgb(224, 209, 192);
+    
+    
 }
 
 textarea:focus {
     background-color: rgb(224, 209, 192);
+    
 }
 
 input {

@@ -50,6 +50,7 @@ textarea{
     border-bottom: 0;
     border-left: 0;
     padding-left: 10px;
+    resize: none;
 }
 .checkbox{
     height: 20%;
