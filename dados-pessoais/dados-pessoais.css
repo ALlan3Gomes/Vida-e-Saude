@@ -1,0 +1,96 @@
+form {
+    display: flex;
+    padding-top: 10px;
+    height: 48%;
+    font-size: 17px;
+}
+
+.half {
+    width: 50%;
+}
+
+.observation {
+    height: 22%;
+    font-size: 17px;
+}
+
+.observation-insert {
+    width: 65%;
+    height: 80%;
+}
+
+.label-default {
+    display: block;
+    padding-top: 8px;
+}
+
+textarea {
+    padding: 5px 0 0 10px;
+    background-color: rgb(230, 214, 198);
+    font-size: 17px;
+    resize: none;
+}
+
+textarea:hover {
+    background-color: rgb(224, 209, 192);
+    
+    
+}
+
+textarea:focus {
+    background-color: rgb(224, 209, 192);
+    
+}
+
+input {
+    background-color: rgb(230, 214, 198);
+}
+
+input:hover {
+    background-color: rgb(224, 209, 192);
+}
+
+input:focus {
+    background-color: rgb(224, 209, 192);
+}
+
+.input-default {
+    width: 50%;
+    height: 25px;
+}
+
+.input-small {
+    width: 30%;
+    height: 25px;
+}
+
+.checkbox {
+    border: 1px solid black;
+    width: 25%;
+    padding-left: 10px;
+    background-color: rgb(230, 214, 198);
+}
+
+.checkbox label:hover {
+    background-color: rgb(224, 209, 192);
+}
+
+button {
+    background-color: rgb(153, 3, 3);
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+
+button:hover {
+    background-color: rgb(104, 1, 1);
+}
+
+.button-default {
+    width: 100%;
+    height: 20%;
+    padding-top: 20px;
+}

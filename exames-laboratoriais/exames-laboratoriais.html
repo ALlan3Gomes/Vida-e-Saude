@@ -1,0 +1,77 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="../default.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="exames-laboratoriais.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
+                        width="100px" height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un">
+                    <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un-active">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html" class="botao-active">Exames
+                        Laboratoriais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
+                </div>
+                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-complexidade/escala-complexidade.html">Escala de Complexidade Assistencial</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
+                </div>
+
+            </nav>
+        </div>
+        <div class="size-default">
+            <div class="title-default">Exames Laboratoriais</div>
+            <div class="flex-box">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="../Imagens/exame-hormonal.png" alt="Imagem 1">
+                        <img src="../Imagens/exames-sangue.webp" alt="Imagem 2">
+                        <img src="../Imagens/fratura-ossea-no-pe.jpg" alt="Imagem 3">
+                        <img src="../Imagens/Modelo-de-Laudo-Médico-Validação-PcD-versão-2023_page-0001.jpg"alt="Imagem 4">
+                        <img src="../Imagens/LAUDO-PARA-IMPRESSAO.jpg" alt="Imagem 5 ">
+                        <img src="../Imagens/osso.jpg" alt="Imagem 6 ">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <script src="exames-laboratoriais.js"></script>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+</body>

@@ -1,0 +1,204 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="../default.css" rel="stylesheet">
+    <link href="sinais-vitais.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
+                        width="100px" height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un">
+                    <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
+                </div>
+                <div class="botao-un-active"><a href="../sinais-vitais/sinais-vitais.html" class="botao-active">Sinais
+                        Vitais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-complexidade/escala-complexidade.html">Escala de Complexidade Assistencial</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
+                </div>
+            </nav>
+        </div>
+        <div class="size-default">
+            <h2 class="title-default">Sinais Vitais</h2>
+            <form>
+                <div class="flex-group">
+                    <labeL>Frequência cardíaca:</labeL>
+                    <div class="cardiac size-vital">
+                        <input placeholder="BPM (Batimentos por Minuto...)">
+                        <textarea placeholder="Considerações..."></textarea>
+                    </div>
+                    <label>Frequência Respiratória:</label>
+                    <div class="breath size-vital">
+                        <input placeholder="mrm (Mov. respir. por Minuto...)">
+                        <textarea placeholder="Considerações..."></textarea>
+                    </div>
+                    <label>Pressão arterial:</label>
+                    <div class="pressure size-vital">
+                        <input placeholder="mmHg (Milímetros de mercúrio...)">
+                        <textarea placeholder="Considerações..."></textarea>
+                    </div>
+                    <label>Temperatura:</label>
+                    <div class="temp size-vital">
+                        <input placeholder="Celsius">
+                        <textarea placeholder="Considerações..."></textarea>
+                    </div>
+                </div>
+                <div class="check-size">
+                    <labeL>Frequência cardíaca:</labeL>
+                    <div class="checkbox">
+                        <input type="radio" id="normal" name="cardiac" value="Normal">
+                        <label for="normal">Normocardia</label><br>
+                        <input type="radio" id="taquicardia" name="cardiac" value="Taquicardia">
+                        <label for="taquicardia">Taquicardia</label><br>
+                        <input type="radio" id="bradicardia" name="cardiac" value="bradicardia">
+                        <label for="bradicardia">Bradicardia</label>
+
+                    </div>
+                    <label>Frequência Respiratória:</label>
+                    <div class="checkbox">
+                        <input type="radio" id="Eupneia" name="breath" value="Eupneia">
+                        <label for="Eupneia">Eupneia</label><br>
+                        <input type="radio" id="Bradipneia" name="breath" value="Bradipneia">
+                        <label for="Bradipneia">Bradipneia</label><br>
+                        <input type="radio" id="Taquipneia" name="breath" value="Taquipneia">
+                        <label for="Taquipneia">Taquipneia</label><br>
+                        <input type="radio" id="Apneia" name="breath" value="Apneia">
+                        <label for="Apneia">Apneia</label>
+
+                    </div>
+                    <label>Pressão Arterial:</label>
+                    <div class="checkbox">
+                        <input type="radio" id="Normotenso" name="pres-art" value="Normotenso">
+                        <label for="Normotenso">Normotenso</label><br>
+                        <input type="radio" id="Hipertenso" name="pres-art" value="Hipertenso">
+                        <label for="Hipertenso">Hipertenso</label><br>
+                        <input type="radio" id="Hipotenso" name="pres-art" value="Hipotenso">
+                        <label for="Hipotenso">Hipotenso</label>
+                    </div>
+
+                    <label>Temperatura:</label>
+                    <div class="checkbox">
+                        <input type="radio" id="Eutermia" name="pres-art" value="Eutermia">
+                        <label for="Eutermia">Eutermia</label><br>
+                        <input type="radio" id="Hipotermia" name="pres-art" value="Hipotermia">
+                        <label for="Hipotermia">Hipotermia</label><br>
+                        <input type="radio" id="Hipertermia" name="pres-art" value="Hipertermia">
+                        <label for="Hipertermia">Hipertermia</label>
+                    </div>
+
+                </div>
+                <div class="table-size">
+                    <div class="flex">
+                        <div class="half">
+                            <label>Pulsos:</label>
+                            <div class="half-iten">
+                                <input type="radio" id="Carotideo" name="arm" value="Carotideo">
+                                <label for="Carotideo">Carotídeo</label><br>
+                                <input type="radio" id="Braquial" name="arm" value="Braquial">
+                                <label for="Braquial">Braquial</label><br>
+                                <input type="radio" id="Radial" name="arm" value="Radial">
+                                <label for="Radial">Radial</label>
+                            </div>
+                        </div>
+                        <div class="half">
+                            <label>Escala de dor:</label>
+                            <div class="half-iten">
+                                <div class="slider">
+                                    <div>
+                                        <input class="bar" type="range" name="vol" value="0" min="1" max="10" step="1"
+                                            oninput="display.value=value" onchange="display.value=value">
+                                        <input type="text" id="display" value="0" class="box-slider" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <th colspan="5">Parâmetros normais dos sinais vitais conforme faixa etária</th>
+                        </tr>
+                        <tr>
+                            <th>Faixa etária</th>
+                            <th>Frequência Cardíaca</th>
+                            <th>Frequência Respiratória</th>
+                            <th>Pressão arterial<br>(máximo aceitável)</th>
+                            <th>Temperatura</th>
+                        </tr>
+                        <tr>
+                            <td>Bebês</td>
+                            <td>100 a 160 bpm</td>
+                            <td>30 a 60 mrm</td>
+                            <td>110/75 mmHg</td>
+                            <td>Entre 36,1ºC e 37,2ºC</td>
+                        </tr>
+                        <tr>
+                            <td>Crianças</td>
+                            <td>80 a 120 bpm</td>
+                            <td>20 a 30 mrm</td>
+                            <td>120/80 mmHg</td>
+                            <td>Entre 36,1ºC e 37,2ºC</td>
+                        </tr>
+                        <tr>
+                            <td>Adultos</td>
+                            <td>60 a 100 bpm</td>
+                            <td>12 a 20 mrm</td>
+                            <td>139/89 mmHg</td>
+                            <td>Entre 36,1ºC e 37,2ºC</td>
+                        </tr>
+                        <tr>
+                            <td>Idosos</td>
+                            <td>45 a 90 bpm</td>
+                            <td>16 a 25 mrm</td>
+                            <td>Mulher: 134/84 mmHg<br>
+                                Homem: 135/88 mmHg</td>
+                            <td>Entre 36,1ºC e 37,2ºC</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><b>Fonte:</b> <a href="https://telemedicinamorsch.com.br/blog/sinais-vitais"
+                                    target="_blank">Telemedicina morsch</a></td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+</body>

@@ -1,0 +1,65 @@
+form{
+    padding-top: 10px;
+    display: block;
+}
+.justify-itens{
+    display: flex;
+    justify-content: left;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding-left: 10px;
+}
+.input-full{
+    width: 150px;
+    background-color: rgb(230, 214, 198);
+    padding-left: 10px;
+}
+table{
+    background-color: rgb(230, 214, 198);
+    width:70%;
+}
+table label{
+    padding-left: 10px;
+}
+.identify{
+    background-color: rgb(230, 214, 198);
+    width: 25%;
+    height: 25px;
+}
+.sep-ind{
+    padding-top: 10px;
+}
+.label-ar{
+    padding-left: 20px;
+}
+button{
+    background-color: rgb(153, 3, 3);
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+.button-ar{
+    padding-left: 220px;
+    padding-top: 20px;
+}
+/*Hover and Focus*/
+button:hover{
+    background-color: rgb(104, 1, 1);
+}
+table label:hover{
+    background-color: rgb(224, 209, 192);
+}
+input:hover{
+    background-color: rgb(224, 209, 192);
+}
+input:focus{
+    background-color: rgb(224, 209, 192);
+}

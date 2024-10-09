@@ -1,0 +1,229 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="../default.css" rel="stylesheet">
+    <link href="escala-complexidade.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+        <script src="calculate_caixas.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
+                        width="100px" height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un">
+                    <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
+                </div>
+                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un-active">
+                    <a href="../escala-complexidade/escala-complexidade.html" class="botao-active">Escala de
+                        Complexidade
+                        Assistencial</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
+                </div>
+
+            </nav>
+        </div>
+        <div class="size-default">
+
+            <h2 class="title-default">Escala de Complexidade Assistencial</h2>
+            <div class="sep-ind">
+                <label>Identificador</label>
+                <input class="identify">
+                <label class="label-ar">Total</label>
+                <input class="input-full" placeholder="Soma Total..." >
+            </div>
+            <form>
+                <div class="justify-itens">
+                    <table>
+                        <th>Descrição</th>
+                        <th>Itens da Avaliação</th>
+                        <th>Pontos Atribuídos</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="9" width="30%">Suporte Terapêutico</th>
+                            <td width="50%"><input type="checkbox" id="sond-ves-per" value="1"><label for="sond-ves-per">Sonda
+                                    Vesical
+                                    Permanente</label></td>
+                            <td width="20%">1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="sond-ves-int" value="2"><label for="sond-ves-int">Sonda Vesical
+                                    Intermitente
+                            </td></label>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="tra-asp" value="2"><label for="tra-asp">Traqueostomia sem Aspiração
+                            </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="tra-c-asp" value="5"><label for="tra-c-asp">Traqueostomia com Aspiração
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="asp-via-aer" value="3"><label for="asp-via-aer">Aspiração de Vias
+                                    Aéreas
+                                    Sup.
+                            </td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="aces-ven-c" value="5"><label for="aces-ven-c">Acesso Venoso Prof.
+                                    Continuo
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="aces-ven-i" value="4"><label for="aces-ven-i">Acesso Venoso
+                                    Intermitente
+                            </td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="aces-ven-p" value="5"><label for="aces-ven-p">A. Venoso Periférico
+                                    Continuo
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="dia-dom" value="5"><label for="dia-dom">Diálise Domiciliar</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4">Quimioterapia</th>
+                            <td><input type="checkbox" id="oral" value="1"><label for="oral">Oral</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="sub-cul" value="3"><label for="sub-cul">Sub Cutânea</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="intra-ven" value="5"><label for="intra-ven">Intra Venosa</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="int-tec" value="5"><label for="int-tec">Intra Teca</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4">Suporte Ventilatório</th>
+                            <td><input type="checkbox" id="o2-int" value="2"><label for="o2-int">O² Intermitente</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="o2-con" value="3"><label for="o2-con">O² Contínuo</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="vent-mec-int" value="4"><label for="vent-mec-int">Ventilação
+                                    Mec.Intermitente
+                            </td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="vent-mec-c" value="5"><label for="vent-mec-c">Ventilação Mecânica
+                                    Contínua
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4">Lesão Vascular/Cultânea</th>
+                            <td><input type="checkbox" id="ulc-1" value="2"><label for="ulc-1">Úlcera de Pressão Estágio 1 </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="ulc-2" value="3"><label for="ulc-2">Úlcera de Pressão Estágio 2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="ulc-3" value="4"><label for="ulc-3">Úlcera de Pressão Estágio 3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="ulc-4" value="5"><label for="ulc-4">Úlcera de Pressão Estágio 4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Dependência de Reabilitação
+                                Fisiot / Fono / Etc. Seções Diárias</th>
+                            <td><input type="checkbox" id="inde" value="0"><label for="inde">Independente</label></td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="depe" value="2"><label for="depe">Dependente</label></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="5">Terapia Nutricional</th>
+                            <td><input type="checkbox" id="sup-ora" value="1"><label for="sup-ora">Suplementação Oral</label></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="gastr" value="2"><label for="gastr">Gastronomia</label></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="sne" value="3"><label for="sne">SNE</label></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="jejun" value="3"><label for="jejun">Jejuno Ileo</label></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="nut-par" value="5"><label for="nut-par">Nutrição Parenteral
+                                    Total</label>
+                            </td>
+                            <td>5</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="justify-itens">
+                    <button>Enviar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+
+    <script src="calculate_caixas.js"></script>
+</body>

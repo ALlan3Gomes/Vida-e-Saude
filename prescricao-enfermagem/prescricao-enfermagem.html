@@ -1,0 +1,89 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="../default.css" rel="stylesheet">
+    <link href="prescricao-enfermagem.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
+                        width="100px" height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un">
+                    <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
+                </div>
+                <div class="botao-un-active">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html" class="botao-active">Prescrição de
+                        Enfermagem</a>
+                </div>
+                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-complexidade/escala-complexidade.html">Escala de Complexidade Assistencial</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
+                </div>
+            </nav>
+        </div>
+        <div class="size-default">
+            <h2 class="title-default">Prescrição de Enfermagem</h2>
+            <form>
+                <div>
+                    <label for="identificacao">Identificação:</label>
+                    <input></input>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-group">
+                        <label for="basic-care">Prescrição de cuidados básicos: </label>
+                        <textarea type="text"
+                            placeholder="Refere-se às necessidades fundamentais do paciente, como higiene, alimentação, mobilidade e conforto"></textarea>
+
+                        <label for="prevent-care">Prescrição de cuidados preventivos:</label>
+                        <textarea type="text"
+                            placeholder="Envolve ações para prevenir o desenvolvimento de complicações ou agravamento do estado de saúde do paciente."></textarea>
+                        <button>Enviar</button>
+                    </div>
+                    <div class="flex-group">
+                        <label for="terap-care">Prescrição de cuidados terapêuticos:</label>
+                        <textarea type="text"
+                            placeholder="Inclui ações relacionadas à administração de medicamentos, tratamentos e terapias prescritas pelo médico."></textarea>
+
+                        <label for="reab-care">Prescrição de cuidados de reabilitação:</label>
+                        <textarea type="text"
+                            placeholder="São orientações que auxiliam na recuperação do paciente e na promoção da independência funcional."></textarea>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+</body>

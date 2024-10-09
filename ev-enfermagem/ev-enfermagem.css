@@ -1,0 +1,67 @@
+.textarea-enf {
+    background-color: rgb(230, 214, 198);
+    display: block;
+    height: 105px;
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+.textarea-enf:hover{
+    background-color: rgb(224, 209, 192);
+}
+.textarea-enf:focus{
+    background-color: rgb(224, 209, 192);
+}
+.flex-group{
+    display: flex;
+    padding-top: 10px;
+}
+.group{
+    width: 50%;
+}
+button {
+    background-color: rgb(153, 3, 3);
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+
+button:hover {
+    background-color: rgb(104, 1, 1);
+}
+input{
+    display: block;
+    background-color: rgb(230, 214, 198);
+    height: 25px;
+    width: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.textarea-cur{
+    background-color: rgb(230, 214, 198);
+    display: block;
+    height: 70px;
+    width: 910px;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+.groupfr{
+    width: 33%;
+}
+.textarea-cur:hover{
+    background-color: rgb(224, 209, 192);
+}
+.textarea-cur:focus{
+    background-color: rgb(224, 209, 192);
+}
+input:hover{
+    background-color: rgb(224, 209, 192);
+}
+input:focus{
+    background-color: rgb(224, 209, 192);
+}

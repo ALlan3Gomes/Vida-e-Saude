@@ -1,0 +1,140 @@
+form{
+    display: flex;
+    padding-top: 10px;
+    font-size: 17px;
+    height: 90%;
+}
+.flex{
+    display:flex;
+}
+.half{
+    width: 50%;
+    padding-bottom: 20px;
+}
+.half-iten{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: rgb(230, 214, 198);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.flex-group{
+    width: 20%;
+}
+.table-size{
+    width:60%;
+}
+.check-size{
+    width: 20%;
+}
+.size-vital{
+    height: 20%;
+    border: 1px solid black;
+    width: 90%;
+    margin-bottom: 1%;
+}
+.flex-group input{
+    background-color: rgb(230, 214, 198);
+    height: 25%;
+    width: 100%;
+    border: 0;
+    padding-left: 10px;
+}
+textarea{
+    background-color: rgb(230, 214, 198);
+    height: 75%;
+    width: 100%;
+    border-top: 1px solid black;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding-left: 10px;
+    resize: none;
+}
+.checkbox{
+    height: 20%;
+    border: 1px solid black;
+    width: 90%;
+    margin-bottom: 1%;
+    background-color: rgb(230, 214, 198);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+table{
+    background-color: rgb(230, 214, 198);
+    height: 60%;
+    width: 95%;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+td{
+    text-align: center;
+}
+button{
+    background-color: rgb(153, 3, 3);
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 15px;
+}
+.button{
+    padding-top:20px ;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.box-slider{
+    background-color: rgb(230, 214, 198);
+    width: 50px;
+    border: 0;
+}
+input[type=range] {
+    appearance: none;
+    width: 200px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 150px;
+    height: 5px;
+    background: #000000;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(143, 38, 38);
+    margin-top: -4px;
+}
+/*Hover and Focus*/
+.checkbox label:hover{
+    background-color: rgb(224, 209, 192);
+}
+.flex-group input:hover{
+    background-color: rgb(224, 209, 192);
+}
+.flex-group input:focus{
+    background-color: rgb(224, 209, 192);
+}
+textarea:hover{
+    background-color: rgb(224, 209, 192);
+}
+textarea:focus{
+    background-color: rgb(224, 209, 192);
+}
+button:hover{
+    background-color: rgb(104, 1, 1);
+}

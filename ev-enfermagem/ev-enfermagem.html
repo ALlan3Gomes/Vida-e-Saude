@@ -1,0 +1,118 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="../default.css" rel="stylesheet">
+    <link href="ev-enfermagem.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
+                        width="100px" height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un">
+                    <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
+                </div>
+                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                </div>
+                <div class="botao-un-active">
+                    <a href="../ev-enfermagem/ev-enfermagem.html" class="botao-active">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-complexidade/escala-complexidade.html">Escala de Complexidade Assistencial</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
+                </div>
+            </nav>
+        </div>
+        <div class="size-default">
+            <h2 class="title-default">Evolução de Enfermagem</h2>
+            <form>
+                <div class="flex-group">
+                    <div class="group">
+                        <label>Estado inicial:</label>
+                        <textarea
+                            placeholder="Como o paciente chegou, sua origem, com quem veio, se tem acompanhante ou não"
+                            class="textarea-enf"></textarea>
+                        <lable>Condição geral:</lable>
+                        <textarea
+                            placeholder="Estado clínico geral, nível de consciência, estado nutricional, condições de locomoção; higiene pessoal"
+                            class="textarea-enf"></textarea>
+                    </div>
+                    <div class="group"></textarea>
+                        <label>Orientações realizadas:</label>
+                        <textarea
+                            placeholder="Coleta de exames, dados do exame físico, cuidados executados e intercorrências"
+                            class="textarea-enf"></textarea>
+                        <label>Condutas:</label>
+                        <textarea
+                            placeholder="Administração de medicamentos e outros procedimentos, orientações médicas"
+                            class="textarea-enf"></textarea>
+                    </div>
+                </div>
+                <button>Enviar</button>
+            </form>
+            <h2 class="title-default">Evolução de Curativo</h2>
+            <form>
+                <div class="flex-group">
+                    <div class="groupfr">
+                        <label>Tipo de lesão:</label>
+                        <input>
+                        <label>Localização da lesão:</label>
+                        <input>
+                        <label>Caracterização do leito da ferida:</label>
+                        <input>
+                    </div>
+                    <div class="groupfr">
+                        <label>Presença do Exsudato:</label>
+                        <input>
+                        <label>Características das Bordas:</label>
+                        <input>
+                        <label>Tamanho da lesão</label>
+                        <input>
+                    </div>
+                    <div class="groupfr">
+                        <label>Tipo de curativo</label>
+                        <input>
+                        <label>Produto utilizado</label>
+                        <input>
+                    </div>
+                </div>
+                <label>Queixas e observações</label>
+                <textarea class="textarea-cur"></textarea>
+                <button>Enviar</button>
+        </div>
+        </form>
+
+
+    </div>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+</body>

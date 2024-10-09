@@ -1,0 +1,211 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="../default.css" rel="stylesheet">
+    <link href="escala-queda.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
+                        width="100px" height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un">
+                    <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
+                </div>
+                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-complexidade/escala-complexidade.html">Escala de Complexidade Assistencial</a>
+                </div>
+                <div class="botao-un-active">
+                    <a href="../escala-queda/escala-queda.html" class="botao-active">Escala de Risco de Quedas</a>
+                </div>
+            </nav>
+        </div>
+        <div class="size-default">
+            <h2 class="title-default">Escala de Risco de Queda</h2>
+
+            <form>
+
+                <table class="table-list">
+                    <tr>
+                        <th colspan="3">História de quedas nos últimos três meses</th>
+                    </tr>
+                    <tr>
+                        <td width="15%"><label for="hisn" class="label-default"><input type="radio" id="hisn"
+                                    name="his">Não</label></td>
+                        <td width="80%"><label for="hisn" class="label-default">Se o cliente não tiver história de
+                                quedas
+                                nos últimos três meses</label></td>
+                        <td width="5%"><label for="hisn" class="label-default">0</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hiss" class="label-default"><input type="radio" name="his" id="hiss">Sim
+                            </label></td>
+                        <td><label for="hiss" class="label-default">Se o cliente caiu durante o período de internação
+                                hospitalar ou se tem um histórico recente de quedas por fatores fisiológicas nos últimos
+                                três meses. </label></td>
+                        <td><label for="hiss" class="label-default">25</label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Diagnóstico Secundário</th>
+                    </tr>
+                    <tr>
+                        <td><label for="diagn" class="label-default"><input type="radio" id="diagn"
+                                    name="diag">Não</label></td>
+                        <td><label for="diagn" class="label-default">Se não existir diagnóstico secundário que possa
+                                contribuir para a queda. </label></td>
+                        <td><label for="diagn" class="label-default">0</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="diags" class="label-default"><input type="radio" name="diag"
+                                    id="diags">Sim</label></td>
+                        <td><label for="diags" class="label-default">Se o prontuário do cliente apresentar mais de um
+                                diagnóstico de enfermagem/ médico.</label></td>
+                        <td><label for="diags" class="label-default">15</label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Auxilio na mobilidade</th>
+                    </tr>
+                    <tr>
+                        <td><label for="non" class="label-default"><input type="radio" id="non"
+                                    name="auxim">Nenhum/Acamado /Repouso leito</label></td>
+                        <td><label for="non" class="label-default">Se o cliente deambula sem nenhum equipamento
+                                auxiliar,
+                                se não sai da cama ou se caminha com apoio de terceiros de forma leve.</label></td>
+                        <td><label for="non" class="label-default">0</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ben" class="label-default"><input type="radio" id="ben"
+                                    name="auxim">Bengala/Muleta</label></td>
+                        <td><label for="ben" class="label-default">Se o cliente utiliza bengala, muleta ou
+                                andador.</label>
+                        </td>
+                        <td><label for="ben" class="label-default">15</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pare" class="label-default"><input type="radio" id="pare"
+                                    name="auxim">Mobiliário ou parede</label></td>
+                        <td><label for="pare" class="label-default">Se o cliente se movimenta utilizando mobiliários ou
+                                paredes.</label></td>
+                        <td><label for="pare" class="label-default">30</label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Terapia Endovenosa</th>
+                    </tr>
+                    <tr>
+                        <td><label for="terapn" class="label-default"><input type="radio" name="terap"
+                                    id="terapn">Não</label></td>
+                        <td><label for="terapn" class="label-default">Se o cliente não está em terapia endovenosa ou
+                                utiliza
+                                dispositivos endovenosa salinizados ou heparinizados. Medicação efetuada em bólus e
+                                quando o cliente utiliza dispositivo
+                                totalmente implantado considera-se zero, quando não tiver em uso. </label></td>
+                        <td><label for="terapn" class="label-default">0</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="teraps" class="label-default"><input type="radio" name="terap"
+                                    id="teraps">Sim</label></td>
+                        <td><label for="teraps" class="label-default">Se o indivíduo utiliza dispositivos endovenosos
+                                com ou
+                                sem soluções endovenosas em infusão continua ou não. Perfusão com cateter epidural está
+                                incluído neste item</label></td>
+                        <td><label for="teraps" class="label-default">20</label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Marcha</th>
+                    </tr>
+                    <tr>
+                        <td><label for="nonaca" class="label-default"><input type="radio" id="nonaca"
+                                    name="march">Normal/Acamado /Cadeira de rodas</label></td>
+                        <td><label for="nonaca" class="label-default">s Uma marcha normal é caracterizada pelo andar de
+                                cabeça
+                                ereta, braços balançando livremente ao lado do corpo e passos largos, sem hesitação.
+                                Também recebe a mesma
+                                pontuação o cliente que está acamado ou utiliza cadeira de rodas (sem
+                                deambulação).</label></td>
+                        <td><label for="nonaca" class="label-default">0</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lent" class="label-default"><input type="radio" id="lent"
+                                    name="march">Lenta/Fraca</label></td>
+                        <td><label for="lent" class="label-default">Os passos são curtos e podem ser vacilantes. Quando
+                                a
+                                marcha é fraca/lenta embora o cliente incline-se para frente enquanto caminha é capaz de
+                                levantar a cabeça sem perder
+                                o equilíbrio. Além disso, caso ele faça uso de algum mobiliário para apoio esse apoio se
+                                dá de forma leve somente para se sentir seguro e não para se manter ereto.</label></td>
+                        <td><label for="lent" class="label-default">10</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alte" class="label-default"><input type="radio" id="alte" name="march">Alterada/
+                                Cambaleante</label></td>
+                        <td><label for="alte" class="label-default">O cliente dá passos curtos e vacilantes e pode ter
+                                dificuldades de levantar-se da cadeira, necessidade de apoiar-se nos braços da cadeira
+                                para levantar-se ou impulsionar o corpo.
+                                Cabeça abaixada e ele olha para o chão, devido à falta de equilíbrio, o cliente
+                                agarra-se ao mobiliário, ou a uma pessoa ou utiliza algum equipamento de auxílio a
+                                marcha.
+                                Quando um membro da equipe auxilia esse cliente a caminhar percebe que o cliente
+                                realmente se apoia nele ou que quando utiliza um mobiliário ou corrimão para se apoiar o
+                                faz com muita força até que seus dedos da mão fiquem brancos.</label></td>
+                        <td><label for="alte" class="label-default">20</label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Estado Mental</th>
+                    </tr>
+                    <tr>
+                        <td><label for="orient" class="label-default"><input type="radio" name="est-ment"
+                                    id="orient">Orientado</label></td>
+                        <td><label for="orient" class="label-default">Quando o cliente é capaz de responder as perguntas
+                                de
+                                orientação no tempo e espaço.</label></td>
+                        <td><label for="orient" class="label-default">0</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="desorient" class="label-default"><input type="radio" name="est-ment"
+                                    id="desorient">Desorientado</label></td>
+                        <td><label for="desorient" class="label-default">Quando o cliente não capaz de responder as
+                                perguntas de
+                                orientação no tempo e espaço ou não responde</label></td>
+                        <td><label for="desorient" class="label-default">15</label></td>
+                    </tr>
+
+                </table>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+</body>

@@ -1,0 +1,124 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Saúde</title>
+    <link href="dados-pessoais.css" rel="stylesheet">
+    <link href="../default.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-e-texto">
+            <div class="logo">
+                <a href="../initial/initial.html"><img src="..\Imagens\Logo branca.png" alt="logo" width="100px"
+                        height="100px"></a>
+            </div>
+            <div class="logo-texto">
+                <h1>Vida e Saúde</h1>
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="botao">
+            <nav>
+                <div class="botao-un-active">
+                    <a href="../dados-pessoais/dados-pessoais.html" class="botao-active">Dados Pessoais</a>
+                </div>
+                <div class="botao-un"><a href="../anamnese/anamnese.html">Anamnese</a>
+                </div>
+                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
+                </div>
+                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-complexidade/escala-complexidade.html">Escala de Complexidade Assistencial</a>
+                </div>
+                <div class="botao-un">
+                    <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
+                </div>
+
+            </nav>
+        </div>
+        <div class="size-default">
+            <h2 class="title-default">Dados Pessoais</h2>
+            <form action="processa_form.php" method="POST">
+                <div class="half">
+                    <label class="label-default" for="nome">Nome:</label>
+                    <input class="input-default" type="text"><br>
+                    <label class="label-default" for="nome-responsavel">Responsável Legal:</label>
+                    <input class="input-default" type="text"><br>
+                    <label class="label-default" for="naturalidade">Naturalidade:</label>
+                    <input class="input-default" type="text"><br>
+
+                    <label for="genero">Sexo:</label><br>
+                    <div class="checkbox">
+                        <input type="radio" id="sexo-m" name="sexo" value="Masculino">
+                        <label for="sexo-m">Masculino</label><br>
+                        <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+                        <label for="sexo-f">Feminino</label><br>
+                    </div><br>
+                    <label for="estado_civil">Estado Civil:</label><br>
+                    <div class="checkbox">
+                        <input type="radio" id="Solteiro" name="estado-c" value="Solteiro">
+                        <label for="Solteiro">Solteiro</label><br>
+                        <input type="radio" id="Casado" name="estado-c" value="Casado">
+                        <label for="Casado">Casado</label><br>
+                        <input type="radio" id="Viuvo" name="estado-c" value="Viúvo">
+                        <label for="Viuvo">Viúvo</label><br>
+                        <input type="radio" id="Divorciado" name="estado-c" value="Divorciado">
+                        <label for="Divorciado">Divorciado</label>
+                    </div><br>
+
+                </div>
+
+                <div class="half">
+                    <label class="label-default" for="cpf">CPF:</label>
+                    <input class="input-small" type="text" placeholder="999.999.999-99"><br>
+
+                    <label class="label-default" for="data">Data de Nascimento:</label>
+                    <input class="input-small" class="input-default" type="date" id="data" name="nome"><br>
+
+                    <label class="label-default" for="contato">Contato:</label>
+                    <input class="input-small" type="tel" placeholder="11 99999-9999"><br>
+
+                    <label class="label-default" for="contato-emergencia">Contato de Emergência:</label>
+                    <input class="input-small" type="tel" placeholder="11 99999-9999"><br>
+
+                    <label class="label-default" for="cidade">Cidade:</label>
+                    <input class="input-small" type="text"><br>
+
+                    <label class="label-default" for="bairro">Bairro:</label>
+                    <input class="input-small" type="text"><br>
+
+                    <label class="label-default" for="numero">Número:</label>
+                    <input class="input-small" type="text"><br>
+                </div>
+            </form>
+            <div class="observation">
+                <label class="label-default">Observações:</label>
+                <textarea class="observation-insert" placeholder="Digite suas observações aqui..."></textarea>
+            </div>
+
+            <div class="button-default">
+                <button type="submit" form="form-button">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        © Todo direito reservado ao uso dentro do Senac MG
+    </footer>
+</body>
