@@ -1,12 +1,9 @@
-O projeto ainda está em fase de desenvolvimento! v0.2.  
-Quaisqueres eventuais bugs serão corrigidos em versões superiores.  
+Projeto ainda em fase de desenvolvimento! v0.3
 
-Ele será entregue dia 01/08/2024 com o HTML5 e o CSS3 totalmente feitos e com um uso básico de lógica utilizando Js.  
-Caso eu consiga integrar o banco de dados, e relacionar ele, dia 20/08 vai ser apresentado essa funcionalidade.  
+Quaisquer erros serão eventualmente corrigidos nas versões super
 
-Esse código é livre e pode ser usado por qualquer um que queira (mesmo eu não recomendando), é meu primeiro código e estou testando diversas funções nele, além de alterações constantes e lançamento de versões constantes.  
-<<<<<<< HEAD
-# Vida-e-Saude-
-# Vida-e-Saude-
-=======
->>>>>>> f9399f5 (function-in-js-mode)
+A entrega está prevista para dia 01/09/2024 ,20/09/2024.
+
+Este código é livre e pode ser utilizado por qualquer pessoa (embora eu não recomende, já que é meu primeiro código). Estou testando diversas funções e realizando alterações constantes, com lançamentos d
+
+Vida-e-Saúde
