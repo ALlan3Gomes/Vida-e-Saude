@@ -5,5 +5,8 @@ Ele será entregue dia 01/08/2024 com o HTML5 e o CSS3 totalmente feitos e com u
 Caso eu consiga integrar o banco de dados, e relacionar ele, dia 20/08 vai ser apresentado essa funcionalidade.  
 
 Esse código é livre e pode ser usado por qualquer um que queira (mesmo eu não recomendando), é meu primeiro código e estou testando diversas funções nele, além de alterações constantes e lançamento de versões constantes.  
+<<<<<<< HEAD
 # Vida-e-Saude-
 # Vida-e-Saude-
+=======
+>>>>>>> f9399f5 (function-in-js-mode)
