@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+
+
+        <script src="cal"></script>
+
 </head>
 
 <body>
@@ -90,27 +94,27 @@
                             <td class="text-center" width="20%" rowspan="4">Abertura Ocular</td>
                             <td width="30%">
 
-                                <input type="radio" id="esp" name="abo" value="esp">
+                                <input type="radio" id="esp" name="abo" value="4">
                                 <label for="esp" >Espontânea</label>
                             </td>
                             <td width="10%">4</td>
                         <tr>
                             <td>
-                                <input type="radio" id="avo" name="abo" value="avo">
+                                <input type="radio" id="avo" name="abo" value="3">
                                 <label for="avo">À voz</label>
                             </td>
                             <td>3</td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="ado" name="abo" value="ado">
+                                <input type="radio" id="ado" name="abo" value="2">
                                 <label for="ado">À dor</label>
                             </td>
                             <td>2</td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="nen" name="abo" value="nen">
+                                <input type="radio" id="nen" name="abo" value="1">
                                 <label for="nen">Nenhuma</label>
                             </td>
                             <td>
@@ -123,35 +127,35 @@
                             <td class="text-center" rowspan="5">Resposta Verbal</td>
                             <td>
 
-                                <input type="radio" id="ori" name="rev" value="ori">
+                                <input type="radio" id="ori" name="rev" value="5">
                                 <label for="ori">Orientada</label>
                             </td>
                             <td>5</td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="conf" name="rev" value="conf">
+                                <input type="radio" id="conf" name="rev" value="5">
                                 <label for="conf">Confusa</label>
                             </td>
                             <td>4</td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="pao" name="rev" value="pao">
+                                <input type="radio" id="pao" name="rev" value="3">
                                 <label for="pao">Palavras inapropriadas</label>
                             </td>
                             <td>3</td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="pin" name="rev" value="pin">
+                                <input type="radio" id="pin" name="rev" value="2">
                                 <label for="pin">Palavras incompreensivas</label>
                             </td>
                             <td>2</td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="non" name="rev" value="non">
+                                <input type="radio" id="non" name="rev" value="1">
                                 <label for="non">Nenhuma</label>
                             </td>
                             <td>1</td>
@@ -159,7 +163,7 @@
 
                         <tr>
                             <td class="text-center" rowspan="6">Resposta Motora</td>
-                            <td><input type="radio" id="obd" name="rem">
+                            <td><input type="radio" id="obd" name="rem" value="6">
                                 <label for="obd">Obedece comandos</label>
                             </td>
                             <td>6</td>
@@ -167,35 +171,47 @@
 
                         <tr>
                             <td>
-                                <input type="radio" id="loc" name="rem">
+                                <input type="radio" id="loc" name="rem" value="5">
                                 <label for="loc">Localiza dor</label>
                             </td>
                             <td>5</td>
                         </tr>
                         <tr>
                             <td>
+
                                 <input type="radio" id="mov" name="rem">
-                                <label for="mov">Movimento de retirada</label>
-                            </td>
+
+                                <input type="radio" id="mov" name="rem" value="4">
                             <td>4</td>
-                        </tr>
                         <tr>
                             <td>
+
                                 <input type="radio" id="fla" name="rem">
+
+                                <input type="radio" id="fla" name="rem" value="3">
+
                                 <label for="fla">Flexão anormal</label>
                             </td>
                             <td>3</td>
                         </tr>
                         <tr>
                             <td>
+
                                 <input type="radio" id="exa" name="rem">
+
+                                <input type="radio" id="exa" name="rem" value="2">
+
                                 <label for="exa">Extensão anormal</label>
                             </td>
                             <td>2</td>
                         </tr>
                         <tr>
                             <td>
+
                                 <input type="radio" id="nenh" name="rem">
+
+                                <input type="radio" id="nenh" name="rem" value="1">
+
                                 <label for="nenh">Nenhuma</label>
                             </td>
                             <td>1 </td>
@@ -203,8 +219,7 @@
                         </td>
                         <tr>
                             <th>Total</th>
-                            <td class="text-end" colspan="2"><input class="input-full" type="text"
-                                    placeholder="Soma total..."></td>
+                            <td class="text-end" colspan="2"><input class="input-full" type="text"placeholder="Soma total..."></td>
                         </tr>
                         <tr>
                             <th>Total Máximo</th>
@@ -218,6 +233,10 @@
                         </tr>
                     </table><br>
                     <button>Enviar</button>
+
+
+                    <script src="calcular-escala.js"></script>
+
                 </div>
                 <div class="group2">
 

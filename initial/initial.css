@@ -1,29 +1,48 @@
-.flex{
-    display:flex;
+.flex {
+    display: flex;
     width: 100vw;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-.box-model{
+
+.box-model {
     padding: 50px;
     background-color: rgb(230, 214, 198);
-    border: 1px solid;
+    border: 1px solid #ccc; /* Cor de borda mais suave */
     border-radius: 20px;
     display: inline-flex;
 }
-.box-center{
+
+.box-center {
     display: block;
     background-color: rgb(219, 198, 176);
-    border: 1px solid;
+    border: 1px solid #bbb; /* Cor de borda mais suave */
     border-radius: 20px;
     margin: 10px;
-
+    width: 220px; /* Definindo largura fixa */
+    height: 400px; /* Definindo altura fixa */
 }
-.box-cima{
-    display:flex;
+
+.box-cima {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px; /* Removi padding-top para uniformidade */
     font-size: 17px;
+    font-weight: bold; /* Adicionei negrito para destacar os textos */
+}
+
+.patient-image {
+    width: 250%; /* Faz a imagem ocupar toda a largura do container */
+    height: 250; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    padding: 20px 0; /* Adicionei espaçamento ao footer */
+    background-color: #f8f8f8; /* Fundo suave para o footer */
+    border-top: 1px solid #ccc; /* Borda superior para separação */
+    font-size: 14px; /* Tamanho da fonte do footer */
 }

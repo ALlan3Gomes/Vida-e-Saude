@@ -17,18 +17,37 @@ td{
     width: 150px;
     background-color: rgb(230, 214, 198);
     padding-left: 10px;
+    font-weight: bold;
+    width: auto;
+    border: 2px solid black;
+    color: #333; /* Cor do texto preta escura mesmo para o campo desabilitado */
+    font-weight: bold; 
+    font-size: 14;
 }
 table{
     background-color: rgb(230, 214, 198);
-    width:70%;
+    width:50%;
 }
 table label{
     padding-left: 10px;
+}
+.tabela-escala{
+    width:60%;
+    margin-left: 50px;
+}
+.tabela-escala{
+    width: auto;
 }
 .identify{
     background-color: rgb(230, 214, 198);
     width: 25%;
     height: 25px;
+    border: 2px solid black; /* Borda preta com 2px de largura */
+    padding: 5px 10px; /* Espaçamento interno para o texto */
+    outline: none; /* Remove o contorno padrão do navegador */
+    color: #333; /* Cor do texto preta escura mesmo para o campo desabilitado */
+    font-weight: bold; 
+    font-size: 14;
 }
 .sep-ind{
     padding-top: 10px;

@@ -6,15 +6,16 @@
     <link href="anamnese.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="logo-e-texto">
-            <div class="logo"><a href="../initial/initial.html"><img src="..\Imagens\Logo Branca.png" alt="logo"
-                        width="100px" height="100px"></a>
+            <div class="logo">
+                <a href="../initial/initial.html">
+                    <img src="../Imagens/Logo Branca.png" alt="Logo" width="100" height="100">
+                </a>
             </div>
             <div class="logo-texto">
                 <h1>Vida e Saúde</h1>
@@ -27,9 +28,11 @@
                 <div class="botao-un">
                     <a href="../dados-pessoais/dados-pessoais.html">Dados Pessoais</a>
                 </div>
-                <div class="botao-un-active"><a href="../anamnese/anamnese.html" class="botao-active">Anamnese</a>
+                <div class="botao-un-active">
+                    <a href="../anamnese/anamnese.html" class="botao-active">Anamnese</a>
                 </div>
-                <div class="botao-un"><a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
+                <div class="botao-un">
+                    <a href="../exame-fisico/exame-fisico.html">Exame Físico</a>
                 </div>
                 <div class="botao-un">
                     <a href="../exames-laboratoriais/exames-laboratoriais.html">Exames Laboratoriais</a>
@@ -37,7 +40,8 @@
                 <div class="botao-un">
                     <a href="../prescricao-enfermagem/prescricao-enfermagem.html">Prescrição de Enfermagem</a>
                 </div>
-                <div class="botao-un"><a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
+                <div class="botao-un">
+                    <a href="../sinais-vitais/sinais-vitais.html">Sinais Vitais</a>
                 </div>
                 <div class="botao-un">
                     <a href="../ev-enfermagem/ev-enfermagem.html">Evolução de Enfermagem</a>
@@ -48,49 +52,45 @@
                 <div class="botao-un">
                     <a href="../escala-queda/escala-queda.html">Escala de Risco de Quedas</a>
                 </div>
-
             </nav>
         </div>
+
         <div class="size-default">
             <h2 class="title-default">Anamnese</h2>
             <form>
                 <div>
                     <label for="identificacao">Identificação:</label>
-                    <input></input>
+                    <input type="text" id="identificacao" placeholder="Digite sua identificação">
                 </div>
                 <div class="flex-row">
                     <div class="flex-group">
                         <label for="queixa">Queixa principal:</label>
-                        <textarea type="text" placeholder="O que o paciente está sentindo/incomodando ele?"></textarea>
+                        <textarea id="queixa" placeholder="O que o paciente está sentindo?"></textarea>
 
-                        <label for="hda">História da doença atual (HDA):</label>
-                        <textarea type="text"
-                            placeholder="Quanto a doença evoluiu? Onde está localizada? Frequência e Duração? O que agrava e o que alivia?"></textarea>
+                        <label for="hda">História da Doença Atual (HDA):</label>
+                        <textarea id="hda" placeholder="Como a doença evoluiu? Localização, frequência e duração? O que agrava e o que alivia?"></textarea>
 
-                        <label for="is">Interrogatório sintomatológico:</label>
-                        <textarea type="text"
-                            placeholder="Como está a alimentação do paciente? Como está a visão e o emocional?"></textarea>
-                        <button>Enviar</button>
+                        <label for="is">Interrogatório Sintomatológico:</label>
+                        <textarea id="is" placeholder="Como está a alimentação do paciente? Visão e estado emocional?"></textarea>
+
+                        <button type="submit">Enviar</button>
                     </div>
                     <div class="flex-group">
                         <label for="antecedentes">Antecedentes (pessoais e familiares):</label>
-                        <textarea type="text"
-                            placeholder="Há histórico da doença na família? Isso já ocorreu ao paciente?"></textarea>
+                        <textarea id="antecedentes" placeholder="Há histórico de doenças na família? Isso já ocorreu com o paciente?"></textarea>
 
-                        <label for="habitos">Hábitos de vida:</label>
-                        <textarea type="text"
-                            placeholder="O paciente faz uso de tabaco, substâncias alucinógenas, álcool ou correlacionados? Ele prática atividades físicas?"></textarea>
+                        <label for="habitos">Hábitos de Vida:</label>
+                        <textarea id="habitos" placeholder="O paciente usa tabaco, substâncias alucinógenas, álcool? Pratica atividades físicas?"></textarea>
 
-                        <label for="psicossocial">História psicossocial:</label>
-                        <textarea type="text"
-                            placeholder="Quais são as condições socioeconômicas do paciente? Há sanemanento básico, orgãos de saúde local ou assistencialistas próximos à região do paciente?"></textarea>
+                        <label for="psicossocial">História Psicossocial:</label>
+                        <textarea id="psicossocial" placeholder="Quais são as condições socioeconômicas do paciente? Há acesso a serviços de saúde na região?"></textarea>
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
-    <footer>
-        © Todo direito reservado ao uso dentro do Senac MG
+
+    <footer> 
+© Todo direito reservado ao uso dentro do Senac MG
     </footer>
 </body>

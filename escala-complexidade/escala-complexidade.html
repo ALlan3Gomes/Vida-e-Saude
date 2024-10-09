@@ -58,10 +58,11 @@
 
             <h2 class="title-default">Escala de Complexidade Assistencial</h2>
             <div class="sep-ind">
-                <label>Identificador</label>
-                <input class="identify">
-                <label class="label-ar">Total</label>
-                <input class="input-full" placeholder="Soma Total..." >
+                <label>Identificador:</label>
+                <input class="identify" placeholder="Resultado" disabled>
+                <label class="label-ar">Total:</label>
+                <input class="input-full" placeholder="Soma Total..." disabled >
+
             </div>
             <form>
                 <div class="justify-itens">
@@ -101,51 +102,50 @@
                             <td>3</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="aces-ven-c" value="5"><label for="aces-ven-c">Acesso Venoso Prof.
-                                    Continuo
+                            <td><input type="checkbox" id="aces-ven-c" value="5"><label for="aces-ven-c">Acesso Venoso Profundo Contínuo.
                             </td>
                             <td>5</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" id="aces-ven-i" value="4"><label for="aces-ven-i">Acesso Venoso
-                                    Intermitente
+                                    Intermitente.
                             </td>
                             <td>4</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" id="aces-ven-p" value="5"><label for="aces-ven-p">A. Venoso Periférico
-                                    Continuo
+                                    Continuo.
                             </td>
                             <td>5</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="dia-dom" value="5"><label for="dia-dom">Diálise Domiciliar</td>
+                            <td><input type="checkbox" id="dia-dom" value="5"><label for="dia-dom">Diálise Domiciliar.</td>
                             <td>5</td>
                         </tr>
                         <tr>
                             <th rowspan="4">Quimioterapia</th>
-                            <td><input type="checkbox" id="oral" value="1"><label for="oral">Oral</td>
+                            <td><input type="checkbox" id="oral" value="1"><label for="oral">Oral.</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="sub-cul" value="3"><label for="sub-cul">Sub Cutânea</td>
+                            <td><input type="checkbox" id="sub-cul" value="3"><label for="sub-cul">Subcutânea.</td>
                             <td>3</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="intra-ven" value="5"><label for="intra-ven">Intra Venosa</td>
+                            <td><input type="checkbox" id="intra-ven" value="5"><label for="intra-ven">Intravenosa.</td>
                             <td>5</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="int-tec" value="5"><label for="int-tec">Intra Teca</td>
+                            <td><input type="checkbox" id="int-tec" value="5"><label for="int-tec">Intrateca.</td>
                             <td>5</td>
                         </tr>
                         <tr>
                             <th rowspan="4">Suporte Ventilatório</th>
-                            <td><input type="checkbox" id="o2-int" value="2"><label for="o2-int">O² Intermitente</td>
+                            <td><input type="checkbox" id="o2-int" value="2"><label for="o2-int">O<sub>2</sub>Intermitente.</td>
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="o2-con" value="3"><label for="o2-con">O² Contínuo</td>
+                            <td><input type="checkbox" id="o2-con" value="3"><label for="o2-con">O<sub>2</sub>Contínuo</td>
                             <td>3</td>
                         </tr>
                         <tr>
@@ -161,20 +161,20 @@
                             <td>5</td>
                         </tr>
                         <tr>
-                            <th rowspan="4">Lesão Vascular/Cultânea</th>
-                            <td><input type="checkbox" id="ulc-1" value="2"><label for="ulc-1">Úlcera de Pressão Estágio 1 </td>
+                            <th rowspan="4">Lesão Vascular/Cutânea</th>
+                            <td><input type="checkbox" id="ulc-1" value="2"><label for="ulc-1">Lesão de Pressão Estágio 1 </td>
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="ulc-2" value="3"><label for="ulc-2">Úlcera de Pressão Estágio 2</td>
+                            <td><input type="checkbox" id="ulc-2" value="3"><label for="ulc-2">Lesão de Pressão Estágio 2</td>
                             <td>3</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="ulc-3" value="4"><label for="ulc-3">Úlcera de Pressão Estágio 3</td>
+                            <td><input type="checkbox" id="ulc-3" value="4"><label for="ulc-3">Lesão de Pressão Estágio 3</td>
                             <td>4</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="ulc-4" value="5"><label for="ulc-4">Úlcera de Pressão Estágio 4</td>
+                            <td><input type="checkbox" id="ulc-4" value="5"><label for="ulc-4">Lesão de Pressão Estágio 4</td>
                             <td>5</td>
                         </tr>
                         <tr>
@@ -193,7 +193,7 @@
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="gastr" value="2"><label for="gastr">Gastronomia</label></td>
+                            <td><input type="checkbox" id="gastr" value="2"><label for="gastr">Gastrostomia</label></td>
                             <td>2</td>
                         </tr>
                         <tr>
@@ -201,7 +201,7 @@
                             <td>3</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="jejun" value="3"><label for="jejun">Jejuno Ileo</label></td>
+                            <td><input type="checkbox" id="jejun" value="3"><label for="jejun">Jejuno/íleostomia</label></td>
                             <td>3</td>
                         </tr>
                         <tr>
@@ -212,6 +212,38 @@
                         </tr>
 
                     </table>
+                    <div></div>
+                    <div>
+                        <table class="tabela-escala"  >
+                            <tr>
+                                <th colspan="2">Tabela da Escala de Complexidade Assistencial</th>
+                            </tr>
+                            <tr>
+                                <td>Cuidados intensivos</td>
+                                <td>(acima de 34 pontos)</td>
+                            </tr>
+                            <tr>
+                                <td>Cuidados semi-intensivos</td>
+                                <td>(29 a 34 pontos)</td>
+                            </tr>
+                            <tr>
+                                <td>Cuidados de alta dependência</td>
+                                <td>(23 a 28 pontos)</td>
+                            </tr>
+                            <tr>
+                                <td>Cuidados intermediários </td>
+                                <td>(18 a 22 pontos)</td>
+                                        
+                            </tr>
+                            <tr>
+                                <td>Cuidados mínimos</td>
+                                <td>(12 a 17 pontos) </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><b>Fonte:</b> <a href="https://www.scielo.br/j/ean/a/PhH8sFcsfx4963YCBkM7khh/#:~:text=Este%20instrumento%20define%20cinco%20categorias,m%C3%ADnimos%20(12%2D17)."
+                                        target="_blank">Scielo Brasil </a></td>
+                            </tr>
+                        </table></div>
                 </div>
                 <div class="justify-itens">
                     <button>Enviar</button>
