@@ -19,10 +19,14 @@
     background-color: rgb(219, 198, 176);
     border: 1px solid #bbb; /* Cor de borda mais suave */
     border-radius: 20px;
-    margin: 10px;
+    margin: 15px;
     width: 220px; /* Definindo largura fixa */
-    height: 400px; /* Definindo altura fixa */
+    min-height: 400px; /* Usar min-height para garantir espaço suficiente */
+    padding: 20px; /* Adicione padding para espaçamento interno */
+    overflow: visible; /* Permitir que o conteúdo extra apareça */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura totais */
 }
+
 
 .box-cima {
     display: flex;
@@ -42,7 +46,7 @@
 footer {
     text-align: center;
     padding: 20px 0; /* Adicionei espaçamento ao footer */
-    background-color: #f8f8f8; /* Fundo suave para o footer */
+    background-color: rgb(233, 224, 214); /* Fundo suave para o footer */
     border-top: 1px solid #ccc; /* Borda superior para separação */
     font-size: 14px; /* Tamanho da fonte do footer */
 }

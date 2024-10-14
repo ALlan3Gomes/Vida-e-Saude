@@ -8,6 +8,11 @@
     font-optical-sizing: auto;
 }
 
+html, body {
+    height: 100%; /* Garante que o body tenha altura total da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
 body {
     background-color: rgb(233, 224, 214);
 }

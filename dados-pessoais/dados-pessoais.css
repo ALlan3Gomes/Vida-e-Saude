@@ -12,6 +12,7 @@ form {
 .observation {
     height: 22%;
     font-size: 17px;
+    margin-top: 20px; /* Move a div para baixo */
 }
 
 .observation-insert {
