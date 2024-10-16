@@ -6,7 +6,8 @@
     <link href="../default.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" sizes="64x64" href="../Imagens/Logo.ico">
 </head>
 
@@ -14,7 +15,7 @@
     <div class="container">
         <div class="logo-e-texto">
             <div class="logo">
-                <a href="../Inicio/initial.html"><img src="..\Imagens\Logo-branca.png" alt="logo" width="100px"
+                <a href="../Inicio/initial.html"><img src="..\Imagens\Logo-Branca.png" alt="logo" width="100px"
                         height="100px"></a>
             </div>
             <div class="logo-texto">
@@ -54,14 +55,18 @@
         </div>
         <div class="size-default">
             <h2 class="title-default">Dados Pessoais</h2>
-            <form action="processa_form.php" method="POST">
+
+            <!-- Cuidado com os names, são eles os identificadores para pegar os valores lá no PHP -->
+            <form action="./processa_form.php" method="POST">
                 <div class="half">
-                    <label class="label-default" for="nome">Nome:</label>
-                    <input class="input-default" type="text"><br>
+                    <label class="label-default">Nome:</label>
+                    <input class="input-default" type="text" name="nome"><br>
+
                     <label class="label-default" for="nome-responsavel">Responsável Legal:</label>
-                    <input class="input-default" type="text"><br>
+                    <input class="input-default" type="text" name="nome-responsavel"><br>
+
                     <label class="label-default" for="naturalidade">Naturalidade:</label>
-                    <input class="input-default" type="text"><br>
+                    <input class="input-default" type="text" name="naturalidade" id="naturalidade"><br>
 
                     <label for="genero">Sexo:</label><br>
                     <div class="checkbox">
@@ -70,6 +75,7 @@
                         <input type="radio" id="sexo-f" name="sexo" value="Feminino">
                         <label for="sexo-f">Feminino</label><br>
                     </div><br>
+
                     <label for="estado_civil">Estado Civil:</label><br>
                     <div class="checkbox">
                         <input type="radio" id="Solteiro" name="estado-c" value="Solteiro">
@@ -86,36 +92,37 @@
 
                 <div class="half">
                     <label class="label-default" for="cpf">CPF:</label>
-                    <input class="input-small" type="text" placeholder="999.999.999-99"><br>
+                    <input class="input-small" type="text" placeholder="999.999.999-99" id="cpf" name="cpf"><br>
 
                     <label class="label-default" for="data">Data de Nascimento:</label>
-                    <input class="input-small" class="input-default" type="date" id="data" name="nome"><br>
+                    <input class="input-small" class="input-default" type="date" id="data" name="data"><br>
 
                     <label class="label-default" for="contato">Contato:</label>
-                    <input class="input-small" type="tel" placeholder="11 99999-9999"><br>
+                    <input class="input-small" type="tel" placeholder="11 99999-9999" name="contato"><br>
 
                     <label class="label-default" for="contato-emergencia">Contato de Emergência:</label>
-                    <input class="input-small" type="tel" placeholder="11 99999-9999"><br>
+                    <input class="input-small" type="tel" placeholder="11 99999-9999" name="contato_emergencia"><br>
 
                     <label class="label-default" for="cidade">Cidade:</label>
-                    <input class="input-small" type="text"><br>
+                    <input class="input-small" type="text" name="cidade"><br>
 
                     <label class="label-default" for="bairro">Bairro:</label>
-                    <input class="input-small" type="text"><br>
+                    <input class="input-small" type="text" name="bairro"><br>
 
                     <label class="label-default" for="numero">Número:</label>
-                    <input class="input-small" type="text"><br>
+                    <input class="input-small" type="text" name="numero"><br>
                 </div>
-            </form>
-            <div class="observation">
-                <label class="label-default">Observações:</label>
-                <textarea class="observation-insert" placeholder="Digite suas observações aqui..."></textarea>
-            </div>
 
-            <div class="button-default">
-                <button type="submit" form="form-button">Enviar</button>
-            </div>
+                <div class="observation">
+                    <label class="label-default">Observações:</label>
+                    <textarea class="observation-insert" placeholder="Digite suas observações aqui..."
+                        name="observacoes" cols="150" rows="3"></textarea>
+                </div>
 
+                <div class="button-default">
+                    <button type="submit">Enviar</button>
+                </div>
+             </form>
         </div>
     </div>
     <footer>
