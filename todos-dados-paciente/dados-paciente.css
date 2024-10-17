@@ -1,0 +1,12 @@
+
+footer {
+    position: fixed; /* Posiciona o footer de forma fixa */
+    bottom: 0; /* Fica na parte inferior da tela */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    text-align: center;
+    padding: 0px 10px; /* Aumenta o padding lateral (20px) */
+    background-color: rgb(233, 224, 214); /* Fundo suave para o footer */
+    margin-top: 0; /* Removido, pois não é necessário */
+    font-size: 16px; /* Tamanho da fonte reduzido */
+}

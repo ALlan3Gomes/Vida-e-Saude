@@ -9,14 +9,14 @@ form {
     width: 50%;
 }
 
-.observation {
+.observation {      
     height: 22%;
     font-size: 17px;
     margin-top: 380px; /* Move a div para baixo */
     position: absolute; /* Usei para mover a div da posicao inicial  */
 }
 
-.observation-insert {
+.observation-insert {   
     width: 65%;
     height: 80%;
 }
@@ -95,4 +95,11 @@ button:hover {
     padding-top: 20px;
     margin-top: 560px; /* Move a div para baixo */
     position: absolute;
+}
+footer{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 5%;
+    padding-right: 10px;
 }
