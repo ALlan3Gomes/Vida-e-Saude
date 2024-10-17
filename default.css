@@ -18,9 +18,33 @@ body {
     
 }
 html, body {
-    overflow: hidden; /* Remove as barras de rolagem */
-    height: 100%; /* Certifique-se de que o conteúdo se ajuste dentro da altura total */
+    height: 100%; /* Garante que o body tenha altura total da tela */
+    margin: 0; /* Remove margens padrão */
+    overflow-y: visible; /* Permite a rolagem vertical quando necessário */
+    overflow-x: hidden; /* Remove a rolagem horizontal */   
 }
+/* Personaliza a barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Parte da barra de rolagem (o fundo) */
+::-webkit-scrollbar-track {
+    background: #8f2626e0; /* Cor de fundo da barra */
+    border-radius: 0px; /* Cantos arredondados */
+}
+
+/* A parte que você pode "arrastar" */
+::-webkit-scrollbar-thumb {
+    background: #8f2626; /* Cor da "parte móvel" da barra */
+    border-radius: 0px; /* Cantos arredondados */
+}
+
+/* Quando o mouse está sobre a parte móvel da barra */
+::-webkit-scrollbar-thumb:hover {
+    background: #555555b3; /* Cor da parte móvel ao passar o mouse */
+}
+
 .container {
     background-color: rgb(143, 38, 38);
     color: rgb(255, 255, 255);
@@ -85,6 +109,7 @@ html, body {
     height: 85%;
 }
 footer{
+    height: 800px;
     display: flex;
     align-items: end;
     justify-content: end;
@@ -100,4 +125,7 @@ footer{
     padding: 10px 0 10px 0;
     border-bottom: 2px solid rgb(0, 0, 0);
     font-size: 25px;
+}
+textarea{
+    resize: none;
 }
