@@ -80,10 +80,12 @@ html, body {
     font-size: 15px;
     height: 8.5%;
 }
+
 .logo-e-texto {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .botao-un {
@@ -113,7 +115,7 @@ footer{
     display: flex;
     align-items: end;
     justify-content: end;
-    height: 5%;
+    height: 8%;
     padding-right: 10px;
 }
 .size-default{

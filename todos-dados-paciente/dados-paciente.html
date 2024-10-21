@@ -2,26 +2,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida e Saúde</title>
-    <!--<link href="../default.css" rel="stylesheet">
-    <link href="escala-complexidade.css" rel="stylesheet">
+    <link href="../default.css" rel="stylesheet">
+    <link href="dados-paciente.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="64x64" href="../Imagens/Logo.ico">-->
+    <link rel="icon" type="image/png" sizes="64x64" href="../Imagens/Logo.ico">
+
+
 </head>
 
 <body>
     <div class="container">
         <div class="logo-e-texto">
-            <div class="logo"><a href="../Inicio/initial.html"><img src="../Imagens/Logo-Branca.png" alt="logo"
-                        width="100px" height="100px"></a></div>
+            <div class="logo">
+                <a href="../Inicio/initial.html"><img src="..\Imagens\Logo-Branca.png" alt="logo" width="100px"
+                        height="100px"></a>
+            </div>
             <div class="logo-texto">
                 <h1>Vida e Saúde</h1>
             </div>
         </div>
     </div>
-    <div class="size-default">
+    <div class="div-lado">
+        <!---1-->
         <h2 class="title-default">Dados Pessoais</h2>
 
         <!-- Cuidado com os names, são eles os identificadores para pegar os valores lá no PHP -->
@@ -37,25 +42,11 @@
                 <input class="input-default" type="text" name="naturalidade" id="naturalidade"><br>
 
                 <label for="genero">Sexo:</label><br>
-                <div class="checkbox">
-                    <input type="radio" id="sexo-m" name="sexo" value="Masculino">
-                    <label for="sexo-m">Masculino</label><br>
-                    <input type="radio" id="sexo-f" name="sexo" value="Feminino">
-                    <label for="sexo-f">Feminino</label><br>
-                </div><br>
+                <input type="texte" id="sexo-m" name="sexo"><br>
 
                 <label for="estado_civil">Estado Civil:</label><br>
-                <div class="checkbox">
-                    <input type="radio" id="Solteiro" name="estado-c" value="Solteiro">
-                    <label for="Solteiro">Solteiro</label><br>
-                    <input type="radio" id="Casado" name="estado-c" value="Casado">
-                    <label for="Casado">Casado</label><br>
-                    <input type="radio" id="Viuvo" name="estado-c" value="Viúvo">
-                    <label for="Viuvo">Viúvo</label><br>
-                    <input type="radio" id="Divorciado" name="estado-c" value="Divorciado">
-                    <label for="Divorciado">Divorciado</label>
-                </div><br>
-
+                <input type="text" id="Solteiro" name="estado-c" value="Solteiro">
+                <br>
             </div>
 
             <div class="half">
@@ -78,7 +69,7 @@
                 <input class="input-small" type="text" name="bairro"><br>
 
                 <label class="label-default" for="numero">Número:</label>
-                <input class="input-small" type="text" name="numero"><br>
+                <input class="input-small" type="text" name="numero">
             </div>
 
             <div class="observation">
@@ -89,6 +80,7 @@
         </form>
     </div>
     <div class="size-default">
+        <!--2   --->
         <h2 class="title-default">Anamnese</h2>
         <form>
             <div>
@@ -97,99 +89,109 @@
             </div>
             <div class="flex-row">
                 <div class="flex-group">
-                    <label for="queixa">Queixa principal:</label>
-                    <textarea id="queixa" placeholder="O que o paciente está sentindo?"></textarea>
+                    <label for="queixa">Queixa principal:</label><br>
+                    <textarea id="queixa" class="textarea-personaliza"
+                        placeholder="O que o paciente está sentindo?"></textarea><br>
 
-                    <label for="hda">História da Doença Atual (HDA):</label>
-                    <textarea id="hda"
-                        placeholder="Como a doença evoluiu? Localização, frequência e duração? O que agrava e o que alivia?"></textarea>
+                    <label for="hda">História da Doença Atual (HDA):</label><br>
+                    <textarea id="hda" class="textarea-personaliza"
+                        placeholder="Como a doença evoluiu? Localização, frequência e duração? O que agrava e o que alivia?"></textarea><br>
 
-                    <label for="is">Interrogatório Sintomatológico:</label>
-                    <textarea id="is"
-                        placeholder="Como está a alimentação do paciente? Visão e estado emocional?"></textarea>
+                    <label for="is">Interrogatório Sintomatológico:</label><br>
+                    <textarea id="is" class="textarea-personaliza"
+                        placeholder="Como está a alimentação do paciente? Visão e estado emocional?"></textarea><br>
 
 
                 </div>
                 <div class="flex-group">
-                    <label for="antecedentes">Antecedentes (pessoais e familiares):</label>
-                    <textarea id="antecedentes"
-                        placeholder="Há histórico de doenças na família? Isso já ocorreu com o paciente?"></textarea>
+                    <label for="antecedentes">Antecedentes (pessoais e familiares):</label><br>
+                    <textarea id="antecedentes" class="textarea-personaliza"
+                        placeholder="Há histórico de doenças na família? Isso já ocorreu com o paciente?"></textarea><br>
 
-                    <label for="habitos">Hábitos de Vida:</label>
-                    <textarea id="habitos"
-                        placeholder="O paciente usa tabaco, substâncias alucinógenas, álcool? Pratica atividades físicas?"></textarea>
+                    <label for="habitos">Hábitos de Vida:</label><br>
+                    <textarea id="habitos" class="textarea-personaliza"
+                        placeholder="O paciente usa tabaco, substâncias alucinógenas, álcool? Pratica atividades físicas?"></textarea><br>
 
-                    <label for="psicossocial">História Psicossocial:</label>
-                    <textarea id="psicossocial"
-                        placeholder="Quais são as condições socioeconômicas do paciente? Há acesso a serviços de saúde na região?"></textarea>
+                    <label for="psicossocial">História Psicossocial:</label><br>
+                    <textarea id="psicossocial" class="textarea-personaliza"
+                        placeholder="Quais são as condições socioeconômicas do paciente? Há acesso a serviços de saúde na região?"></textarea><br>
                 </div>
             </div>
         </form>
     </div>
     <div class="size-default">
-        <h2 class="title-default">Exame Físico</h2>
+        <div class="div-lado">
+            <h2 class="title-default">Exame Físico</h2>
+            <form>
+                <div class="group1">
 
-        <form>
-            <div class="group1">
-                <div class="flex-box">
                     <div class="flex-group">
-                        <label class="flex-block" for="orient">Orientação Espaço e Tempo:</label>
-                        <textarea
-                            placeholder="Avaliar se o paciente consegue reconhecer dados da realidade e de si mesmo"></textarea>
+                        <label class="flex-block" for="orient">Orientação Espaço e Tempo:</label><br>
+                        <textarea class="textarea-personaliza"
+                            placeholder="Avaliar se o paciente consegue reconhecer dados da realidade e de si mesmo"></textarea><br>
                     </div>
                     <div class="flex-group">
-                        <label for="dec">Decúbito Preferencial:</label><br>
+                        <label class="exame-fisico-label" for="dec">Decúbito Preferencial:</label><br>
                         <input type="text" id="dec" name="dec" placeholder="Digite o decúbito preferencial">
                     </div>
+
+
+                    <label for="abo">Abertura Ocular:</label><br>
+                    <input class="exame-fisico-label" type="text" id="abo" name="abo"
+                        placeholder="Digite a abertura ocular"><br>
+
+                    <label for="rev">Resposta Verbal:</label><br>
+                    <input class="exame-fisico-label" type="text" id="rev" name="rev"
+                        placeholder="Digite a resposta verbal"><br>
+
+                    <label for="rem">Resposta Motora:</label><br>
+                    <input class="exame-fisico-label" type="text" id="rem" name="rem"
+                        placeholder="Digite a resposta motora"><br>
+
+                    <script src="calcular-escala.js"></script>
                 </div>
 
-                <label for="abo">Abertura Ocular:</label><br>
-                <input type="text" id="abo" name="abo" placeholder="Digite a abertura ocular"><br>
+                <div class="group2">
+                    <label for="estado-geral">Avaliação subjetiva:</label><br>
+                    <input class="exame-fisico-label" type="text" id="estado-geral" name="estado-geral"
+                        placeholder="Digite a avaliação subjetiva"><br>
 
-                <label for="rev">Resposta Verbal:</label><br>
-                <input type="text" id="rev" name="rev" placeholder="Digite a resposta verbal"><br>
+                    <label for="atv-lei">Atividade no Leito:</label><br>
+                    <input class="exame-fisico-label" type="text" id="atv-lei" name="atv-lei"
+                        placeholder="Digite a atividade no leito"><br>
 
-                <label for="rem">Resposta Motora:</label><br>
-                <input type="text" id="rem" name="rem" placeholder="Digite a resposta motora"><br>
+                    <label for="clas-ling">Classificação de Linguagem:</label><br>
+                    <input class="exame-fisico-label" type="text" id="clas-ling" name="clas-ling"
+                        placeholder="Digite a classificação de linguagem"><br>
 
-                <script src="calcular-escala.js"></script>
-            </div>
+                    <label for="nivel-consciencia">Nível de Consciência:</label><br>
+                    <input class="exame-fisico-label" type="text" id="nivel-consciencia" name="nivel-consciencia"
+                        placeholder="Digite o nível de consciência"><br>
+                </div>
 
-            <div class="group2">
-                <label for="estado-geral">Avaliação subjetiva:</label><br>
-                <input type="text" id="estado-geral" name="estado-geral" placeholder="Digite a avaliação subjetiva"><br>
+                <div class="group3">
+                    <label for="hid">Hidratação:</label><br>
+                    <input class="exame-fisico-label" type="text" id="hid" name="hid"
+                        placeholder="Digite o estado de hidratação"><br>
 
-                <label for="atv-lei">Atividade no Leito:</label><br>
-                <input type="text" id="atv-lei" name="atv-lei" placeholder="Digite a atividade no leito"><br>
+                    <label for="nut">Nutrição:</label><br>
+                    <input class="exame-fisico-label" type="text" id="nut" name="nut"
+                        placeholder="Digite o estado de nutrição"><br>
 
-                <label for="clas-ling">Classificação de Linguagem:</label><br>
-                <input type="text" id="clas-ling" name="clas-ling"
-                    placeholder="Digite a classificação de linguagem"><br>
+                    <label for="perf">Perfusão ti. peri. das mãos:</label><br>
+                    <input class="exame-fisico-label" type="text" id="perf" name="perf"
+                        placeholder="Digite a perfusão das mãos"><br>
 
-                <label for="nivel-consciencia">Nível de Consciência:</label><br>
-                <input type="text" id="nivel-consciencia" name="nivel-consciencia"
-                    placeholder="Digite o nível de consciência"><br>
-            </div>
-
-            <div class="group3">
-                <label for="hid">Hidratação:</label><br>
-                <input type="text" id="hid" name="hid" placeholder="Digite o estado de hidratação"><br>
-
-                <label for="nut">Nutrição:</label><br>
-                <input type="text" id="nut" name="nut" placeholder="Digite o estado de nutrição"><br>
-
-                <label for="perf">Perfusão ti. peri. das mãos:</label><br>
-                <input type="text" id="perf" name="perf" placeholder="Digite a perfusão das mãos"><br>
-
-                <label for="linf">Palpação dos linfonodos:</label><br>
-                <input type="text" id="linf" name="linf" placeholder="Digite a palpação dos linfonodos"><br>
-            </div>
-        </form>
-    </div>
-    </div>
+                    <label for="linf">Palpação dos linfonodos:</label><br>
+                    <input class="exame-fisico-label" type="text" id="linf" name="linf"
+                        placeholder="Digite a palpação dos linfonodos"><br>
+                </div>
+            </form>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br>
     <div class="size-default">
-        <div class="title-default">
-            <h2>Exames Laboratoriais</h2>
+        <div class=>
+            <h2 class="title-default">Exames Laboratoriais</h2>
         </div>
         <div class="flex-box">
             <div class="carousel-container">
@@ -233,7 +235,7 @@
     </style>
     <script src="exames-laboratoriais.js"></script>
 
-    <div class="size-default">
+    <div class="">
         <h2 class="title-default">Prescrição de Enfermagem</h2>
         <form>
             <div>
@@ -242,199 +244,292 @@
             </div>
             <div class="flex-row">
                 <div class="flex-group">
-                    <label for="basic-care">Prescrição de cuidados básicos: </label>
-                    <textarea type="text"
-                        placeholder="Refere-se às necessidades fundamentais do paciente, como higiene, alimentação, mobilidade e conforto"></textarea>
+                    <label for="basic-care">Prescrição de cuidados básicos: </label><br>
+                    <textarea class="textarea-personaliza" type="text"
+                        placeholder="Refere-se às necessidades fundamentais do paciente, como higiene, alimentação, mobilidade e conforto"></textarea><br>
 
-                    <label for="prevent-care">Prescrição de cuidados preventivos:</label>
-                    <textarea type="text"
-                        placeholder="Envolve ações para prevenir o desenvolvimento de complicações ou agravamento do estado de saúde do paciente."></textarea>
+                    <label for="prevent-care">Prescrição de cuidados preventivos:</label><br>
+                    <textarea class="textarea-personaliza" type="text"
+                        placeholder="Envolve ações para prevenir o desenvolvimento de complicações ou agravamento do estado de saúde do paciente."></textarea><br>
                 </div>
                 <div class="flex-group">
-                    <label for="terap-care">Prescrição de cuidados terapêuticos:</label>
-                    <textarea type="text"
-                        placeholder="Inclui ações relacionadas à administração de medicamentos, tratamentos e terapias prescritas pelo médico."></textarea>
+                    <label for="terap-care">Prescrição de cuidados terapêuticos:</label><br>
+                    <textarea class="textarea-personaliza" type="text"
+                        placeholder="Inclui ações relacionadas à administração de medicamentos, tratamentos e terapias prescritas pelo médico."></textarea><br>
 
-                    <label for="reab-care">Prescrição de cuidados de reabilitação:</label>
-                    <textarea type="text"
-                        placeholder="São orientações que auxiliam na recuperação do paciente e na promoção da independência funcional."></textarea>
+                    <label for="reab-care">Prescrição de cuidados de reabilitação:</label><br>
+                    <textarea class="textarea-personaliza" type="text"
+                        placeholder="São orientações que auxiliam na recuperação do paciente e na promoção da independência funcional."></textarea><br>
                 </div>
             </div>
         </form>
-        <div class="size-default">
-            <h2 class="title-default">Sinais Vitais</h2>
-            <form>
+    </div>
+    <div class="size-default">
+        <h2 class="title-default">Prescrição Médica</h2>
+        <form>
+            <div>
+                <label for="identificacao">Identificação:</label>
+                <input></input>
+            </div>
+            <div class="flex-row">
+                <div class="flex-group">
+                    <label for="nome-medicamento">Nome do Medicamento:</label><br>
+                    <textarea type="nome-medicamento" placeholder="Digite o nome do medicamento"></textarea><br>
+
+                    <label for="dose-medicamento">Dose do Medicamento:</label><br>
+                    <textarea type="dose-medicamento" placeholder="Digite a dose do medicamento"></textarea><br>
+
+                    <label for="frequencia-aplicacao">Frequência de Aplicação:</label><br>
+                    <textarea type="frequencia-aplicacao" placeholder="Digite a frequência de aplicação"></textarea><br>
+                </div>
+                <div class="flex-group">
+                    <label for="via-administracao">Via de Administração:</label><br>
+                    <textarea type="via-administracao" placeholder="Digite a via de administração"></textarea><br>
+
+                    <label for="horario-aplicacao">Horário de Aplicação:</label><br>
+                    <textarea type="horario-aplicacao" placeholder="Digite o horário de aplicação"></textarea><br>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="">
+        <h2 class="title-default">Sinais Vitais</h2>
+        <form>
+            <!-- Frequência Cardíaca -->
+            <div class="flex-group">
+                <label for="frequencia-cardiaca">Frequência cardíaca:</label><br>
+                <input id="frequencia-cardiaca" type="text" placeholder="Digite a frequência cardíaca..."><br>
+                <textarea placeholder="Considerações sobre a frequência cardíaca..."></textarea><br>
+            </div>
+
+            <!-- Frequência Respiratória -->
+            <div class="flex-group">
+                <label for="frequencia-respiratoria">Frequência Respiratória:</label><br>
+                <input id="frequencia-respiratoria" type="text" placeholder="Digite a frequência respiratória..."><br>
+                <textarea placeholder="Considerações sobre a frequência respiratória..."></textarea><br>
+            </div>
+
+            <!-- Pressão Arterial -->
+            <div class="flex-group">
+                <label for="pressao-arterial">Pressão Arterial:</label><br>
+                <input id="pressao-arterial" type="text" placeholder="Digite a pressão arterial..."><br>
+                <textarea placeholder="Considerações sobre a pressão arterial..."></textarea><br>
+            </div>
+
+            <!-- Temperatura -->
+            <div class="flex-group">
+                <label for="temperatura">Temperatura:</label><br>
+                <input id="temperatura" type="text" placeholder="Digite a temperatura..."><br>
+                <textarea placeholder="Considerações sobre a temperatura..."></textarea><br>
+            </div>
+
+            <!-- Escala de Dor -->
+            <div class="flex-group">
+                <label for="escala-dor">Escala de dor:</label><br>
+                <input id="escala-dor" type="text" placeholder="Digite o valor da escala de dor..."><br>
+            </div>
+
+            <div class="check-size">
                 <!-- Frequência Cardíaca -->
                 <div class="flex-group">
-                    <label for="frequencia-cardiaca">Frequência cardíaca:</label>
-                    <input id="frequencia-cardiaca" type="text" placeholder="Digite a frequência cardíaca...">
-                    <textarea placeholder="Considerações sobre a frequência cardíaca..."></textarea>
+                    <label for="frequencia-cardiaca">Frequência cardíaca:</label><br>
+                    <input id="frequencia-cardiaca" type="text"
+                        placeholder="Digite a frequência cardíaca (Normocardia, Taquicardia, Bradicardia)..."><br>
                 </div>
 
                 <!-- Frequência Respiratória -->
                 <div class="flex-group">
-                    <label for="frequencia-respiratoria">Frequência Respiratória:</label>
-                    <input id="frequencia-respiratoria" type="text" placeholder="Digite a frequência respiratória...">
-                    <textarea placeholder="Considerações sobre a frequência respiratória..."></textarea>
+                    <label for="frequencia-respiratoria">Frequência Respiratória:</label><br>
+                    <input id="frequencia-respiratoria" type="text"
+                        placeholder="Digite a frequência respiratória (Eupneia, Bradipneia, Taquipneia, Apneia)..."><br>
                 </div>
 
                 <!-- Pressão Arterial -->
                 <div class="flex-group">
-                    <label for="pressao-arterial">Pressão Arterial:</label>
-                    <input id="pressao-arterial" type="text" placeholder="Digite a pressão arterial...">
-                    <textarea placeholder="Considerações sobre a pressão arterial..."></textarea>
+                    <label for="pressao-arterial">Pressão Arterial:</label><br>
+                    <input id="pressao-arterial" type="text"
+                        placeholder="Digite a pressão arterial (Normotenso, Hipertenso, Hipotenso)..."><br>
                 </div>
 
                 <!-- Temperatura -->
                 <div class="flex-group">
-                    <label for="temperatura">Temperatura:</label>
-                    <input id="temperatura" type="text" placeholder="Digite a temperatura...">
-                    <textarea placeholder="Considerações sobre a temperatura..."></textarea>
+                    <label for="temperatura">Temperatura:</label><br>
+                    <input id="temperatura" type="text"
+                        placeholder="Digite a temperatura (Eutermia, Hipotermia, Hipertermia)..."><br>
                 </div>
+            </div>
 
-                <!-- Escala de Dor -->
-                <div class="flex-group">
-                    <label for="escala-dor">Escala de dor:</label>
-                    <input id="escala-dor" type="text" placeholder="Digite o valor da escala de dor...">
-                </div>
-
-                <!-- Botão Enviar -->
-                <div class="button">
-                    <button>Enviar</button>
-                </div>
-                <div class="check-size">
-                    <!-- Frequência Cardíaca -->
-                    <div class="flex-group">
-                        <label for="frequencia-cardiaca">Frequência cardíaca:</label>
-                        <input id="frequencia-cardiaca" type="text"
-                            placeholder="Digite a frequência cardíaca (Normocardia, Taquicardia, Bradicardia)...">
-                    </div>
-
-                    <!-- Frequência Respiratória -->
-                    <div class="flex-group">
-                        <label for="frequencia-respiratoria">Frequência Respiratória:</label>
-                        <input id="frequencia-respiratoria" type="text"
-                            placeholder="Digite a frequência respiratória (Eupneia, Bradipneia, Taquipneia, Apneia)...">
-                    </div>
-
-                    <!-- Pressão Arterial -->
-                    <div class="flex-group">
-                        <label for="pressao-arterial">Pressão Arterial:</label>
-                        <input id="pressao-arterial" type="text"
-                            placeholder="Digite a pressão arterial (Normotenso, Hipertenso, Hipotenso)...">
-                    </div>
-
-                    <!-- Temperatura -->
-                    <div class="flex-group">
-                        <label for="temperatura">Temperatura:</label>
-                        <input id="temperatura" type="text"
-                            placeholder="Digite a temperatura (Eutermia, Hipotermia, Hipertermia)...">
-                    </div>
-                </div>
-
-            </form>
-        </div>
-        <div class="size-default">
-            <h2 class="title-default">Evolução de Enfermagem</h2>
-            <form>
-                <div class="flex-group">
-                    <div class="group">
-                        <label>Estado inicial:</label>
-                        <textarea
-                            placeholder="Como o paciente chegou, sua origem, com quem veio, se tem acompanhante ou não"
-                            class="textarea-enf"></textarea>
-                        <lable>Condição geral:</lable>
-                        <textarea
-                            placeholder="Estado clínico geral, nível de consciência, estado nutricional, condições de locomoção; higiene pessoal"
-                            class="textarea-enf"></textarea>
-                    </div>
-                    <div class="group"></textarea>
-                        <label>Orientações realizadas:</label>
-                        <textarea
-                            placeholder="Coleta de exames, dados do exame físico, cuidados executados e intercorrências"
-                            class="textarea-enf"></textarea>
-                        <label>Condutas:</label>
-                        <textarea
-                            placeholder="Administração de medicamentos e outros procedimentos, orientações médicas"
-                            class="textarea-enf"></textarea>
-                    </div>
-                </div>
-
-            </form>
-            <h2 class="title-default">Evolução de Curativo</h2>
-            <form>
-                <div class="flex-group">
-                    <div class="groupfr">
-                        <label>Tipo de lesão:</label>
-                        <input>
-                        <label>Localização da lesão:</label>
-                        <input>
-                        <label>Caracterização do leito da ferida:</label>
-                        <input>
-                    </div>
-                    <div class="groupfr">
-                        <label>Presença do Exsudato:</label>
-                        <input>
-                        <label>Características das Bordas:</label>
-                        <input>
-                        <label>Tamanho da lesão</label>
-                        <input>
-                    </div>
-                    <div class="groupfr">
-                        <label>Tipo de curativo</label>
-                        <input>
-                        <label>Produto utilizado</label>
-                        <input>
-                    </div>
-                </div>
-                <label>Queixas e observações</label>
-                <textarea class="textarea-cur"></textarea>
-
-        </div>
         </form>
     </div>
-    <div class="size-default">
-        <h2 class="title-default">Suporte Terapêutico</h2>
+    <div class="">
+        <h2 class="title-default">Evolução de Enfermagem</h2>
+        <form>
+            <div class="flex-group">
+                <div class="group">
+                    <label>Estado inicial:</label><br>
+                    <textarea class="textarea-personaliza"
+                        placeholder="Como o paciente chegou, sua origem, com quem veio, se tem acompanhante ou não"
+                        class="textarea-enf"></textarea><br>
+                    <lable>Condição geral:</lable><br>
+                    <textarea class="textarea-personaliza"
+                        placeholder="Estado clínico geral, nível de consciência, estado nutricional, condições de locomoção; higiene pessoal"
+                        class="textarea-enf"></textarea>
+                </div>
+                <div class="group"></textarea>
+                    <label>Orientações realizadas:</label><br>
+                    <textarea class="textarea-personaliza"
+                        placeholder="Coleta de exames, dados do exame físico, cuidados executados e intercorrências"
+                        class="textarea-enf"></textarea><br>
+                    <label>Condutas:</label><br>
+                    <textarea class="textarea-personaliza"
+                        placeholder="Administração de medicamentos e outros procedimentos, orientações médicas"
+                        class="textarea-enf"></textarea><br>
+                </div>
+            </div>
+    </div>
+    </form>
+    <div class="">
+        <h2 class="title-default">Evolução de Curativo</h2>
+        <form>
+            <div class="flex-group">
+                <div class="groupfr">
+                    <label>Tipo de lesão:</label><br>
+                    <input><br>
+                    <label>Localização da lesão:</label><br>
+                    <input><br>
+                    <label>Caracterização do leito da ferida:</label><br>
+                    <input><br>
+                </div>
+                <div class="groupfr">
+                    <label>Presença do Exsudato:</label><br>
+                    <input><br>
+                    <label>Características das Bordas:</label><br>
+                    <input><br>
+                    <label>Tamanho da lesão</label><br>
+                    <input><br>
+                </div>
+                <div class="groupfr">
+                    <label>Tipo de curativo</label><br>
+                    <input><br>
+                    <label>Produto utilizado</label><br>
+                    <input><br>
+                </div>
+            </div>
+            <label>Queixas e observações</label><br>
+            <textarea class="textarea-cur"></textarea><br>
+        </form>
+    </div>
+    </div>
+    <div class="">
+        <h2 class="title-default">Escala de Complexidade Assistencial</h2>
         <form>
             <!-- Suporte Terapêutico -->
             <div class="flex-group">
-                <label for="suporte-terapeutico">Suporte terapêutico:</label>
-                <input id="suporte-terapeutico" type="text" placeholder="Digite o suporte terapêutico...">
+                <label for="suporte-terapeutico">Suporte terapêutico:</label><br>
+                <input id="suporte-terapeutico" type="text" placeholder="Digite o suporte terapêutico..."><br>
             </div>
-    
+
             <!-- Quimioterapia -->
             <div class="flex-group">
-                <label for="quimioterapia">Quimioterapia:</label>
-                <input id="quimioterapia" type="text" placeholder="Digite informações sobre quimioterapia...">
+                <label for="quimioterapia">Quimioterapia:</label><br>
+                <input id="quimioterapia" type="text" placeholder="Digite informações sobre quimioterapia..."><br>
             </div>
-    
+
             <!-- Suporte Ventilatório -->
             <div class="flex-group">
-                <label for="suporte-ventilatorio">Suporte ventilatório:</label>
-                <input id="suporte-ventilatorio" type="text" placeholder="Digite informações sobre suporte ventilatório...">
+                <label for="suporte-ventilatorio">Suporte ventilatório:</label><br>
+                <input id="suporte-ventilatorio" type="text"
+                    placeholder="Digite informações sobre suporte ventilatório..."><br>
             </div>
-    
+
             <!-- Lesão Vascular/Cutânea -->
             <div class="flex-group">
-                <label for="lesao-vascular">Lesão vascular/cutânea:</label>
-                <input id="lesao-vascular" type="text" placeholder="Digite informações sobre lesão vascular/cutânea...">
+                <label for="lesao-vascular">Lesão vascular/cutânea:</label><br>
+                <input id="lesao-vascular" type="text"
+                    placeholder="Digite informações sobre lesão vascular/cutânea..."><br>
             </div>
-    
+
             <!-- Dependência de Reabilitação, Fisiot / Fono / Etc. e Seções Diárias -->
             <div class="flex-group">
-                <label for="dependencia-fisiot-secoes">Dependência de reabilitação, Fisiot / Fono / Etc. e Seções diárias:</label>
-                <input id="dependencia-fisiot-secoes" type="text" placeholder="Digite informações sobre dependência, fisiot, fono e seções diárias...">
+                <label for="dependencia-fisiot-secoes">Dependência de reabilitação, Fisiot / Fono / Etc. e Seções
+                    diárias:</label><br>
+                <input id="dependencia-fisiot-secoes" type="text"
+                    placeholder="Digite informações sobre dependência, fisiot, fono e seções diárias..."><br>
             </div>
-    
+
             <!-- Terapia Nutricional -->
             <div class="flex-group">
-                <label for="terapia-nutricional">Terapia nutricional:</label>
-                <input id="terapia-nutricional" type="text" placeholder="Digite informações sobre terapia nutricional...">
+                <label for="terapia-nutricional">Terapia nutricional:</label><br>
+                <input id="terapia-nutricional" type="text"
+                    placeholder="Digite informações sobre terapia nutricional..."><br>
             </div>
-    
+
+            <div class=" flex-block">
+                <label for="Total">Total:</label><br>
+                <input type="text" id="Total" placeholder="Soma total"><br>
+
+            </div>
+
+            <div class="flex-block">
+
+                <label for="identificador">Identificador:</label><br>
+                <input type="text" id="identificador"
+                    placeholder="Resultado de acorto com o numero da escala de complexidade "><br>
+            </div>
+
+        </form>
+    </div>
+    <div class="">
+        <h2 class="title-default">Escala de Risco de Queda</h2>
+
+        <form>
+            <!-- Histórico de quedas nos últimos três meses -->
+            <div class="flex-group">
+                <label for="historico-quedas">Histórico de quedas nos últimos três meses:</label><br>
+                <input id="historico-quedas" type="text" value="Sim ou Não" placeholder="Digite 'Sim' ou 'Não'..."><br>
+            </div>
+
+            <!-- Diagnóstico secundário -->
+            <div class="flex-group">
+                <label for="diagnostico-secundario">Diagnóstico secundário:</label><br>
+                <input id="diagnostico-secundario" type="text" value="Sim ou Não"
+                    placeholder="Digite 'Sim' ou 'Não'..."><br>
+            </div>
+
+            <!-- Auxílio na mobilidade -->
+            <div class="flex-group">
+                <label for="auxilio-mobilidade">Auxílio na mobilidade:</label><br>
+                <input id="auxilio-mobilidade" type="text"
+                    value="Nenhum/Acamado/Repouso no leito, Bengala/Muleta, Mobiliário ou parede"
+                    placeholder="Descreva a mobilidade..."><br>
+            </div>
+
+            <!-- Terapia endovenosa -->
+            <div class="flex-group">
+                <label for="terapia-endovenosa">Terapia endovenosa:</label><br>
+                <input id="terapia-endovenosa" type="text" value="Sim ou Não"
+                    placeholder="Digite 'Sim' ou 'Não'..."><br>
+            </div>
+
+            <!-- Marcha -->
+            <div class="flex-group">
+                <label for="marcha">Marcha:</label><br>
+                <input id="marcha" type="text"
+                    value="Normal/Acamado/Cadeira de rodas, Lenta/Fraca, Alterada/Cambaleante"
+                    placeholder="Descreva a marcha..."><br>
+            </div>
+
+            <!-- Estado mental -->
+            <div class="flex-group">
+                <label for="estado-mental">Estado mental:</label><br>
+                <input id="estado-mental" type="text" value="Orientado ou Desorientado"
+                    placeholder="Digite 'Orientado' ou 'Desorientado'..."><br>
+            </div>
+
             <!-- Botão Enviar -->
-            <div class="button">
+            <div class="button"><br>
                 <button>Enviar</button>
+
             </div>
         </form>
     </div>

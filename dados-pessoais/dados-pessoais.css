@@ -1,7 +1,7 @@
 form {
     display: flex;
     padding-top: 10px;
-    height: 48%;
+    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
     font-size: 17px;
 }
 
@@ -9,16 +9,15 @@ form {
     width: 50%;
 }
 
-.observation {      
-    height: 22%;
+.observation {
+    height: auto; /* Ajusta a altura automaticamente */
     font-size: 17px;
-    margin-top: 380px; /* Move a div para baixo */
-    position: absolute; /* Usei para mover a div da posicao inicial  */
+    margin-top: 20px; /* Ajuste a margem conforme necessário */
 }
 
-.observation-insert {   
-    width: 65%;
-    height: 80%;
+.observation-insert {
+    width: 65%; /* Ajuste para o tamanho anterior */
+    height: 80%; /* Mantém a altura anterior */
 }
 
 .label-default {
@@ -30,16 +29,17 @@ textarea {
     padding: 5px 0 0 10px;
     background-color: rgb(230, 214, 198);
     font-size: 17px;
-    resize: none;    
+    resize: none;
+    height: 800px; /* Ajuste para a altura que você preferir */
+    margin-bottom: 3%; /* Distância pequena entre o textarea e o botão */
 }
 
 textarea:hover {
-    background-color: rgb(224, 209, 192); 
+    background-color: rgb(224, 209, 192);
 }
 
 textarea:focus {
     background-color: rgb(224, 209, 192);
-    
 }
 
 input {
@@ -55,18 +55,18 @@ input:focus {
 }
 
 .input-default {
-    width: 50%;
-    height: 25px;
+    width: 50%; /* Mantém a largura anterior */
+    height: 25px; /* Mantém a altura anterior */
 }
 
 .input-small {
-    width: 30%;
-    height: 25px;
+    width: 30%; /* Mantém a largura anterior */
+    height: 25px; /* Mantém a altura anterior */
 }
 
 .checkbox {
     border: 1px solid black;
-    width: 25%;
+    width: 25%; /* Mantém a largura anterior */
     padding-left: 10px;
     background-color: rgb(230, 214, 198);
 }
@@ -82,7 +82,6 @@ button {
     color: rgb(255, 255, 255);
     border-radius: 20px;
     font-size: 15px;
-     
 }
 
 button:hover {
@@ -91,15 +90,16 @@ button:hover {
 
 .button-default {
     width: 100%;
-    height: 20%;
-    padding-top: 20px;
-    margin-top: 560px; /* Move a div para baixo */
-    position: absolute;
-}
-footer{
+    padding-top: 10px; /* Reduz a distância acima do botão */
+    margin-top: 5px; /* Ajuste a margem superior do botão para estar mais próximo do textarea */
     display: flex;
-    align-items: end;
-    justify-content: end;
+    justify-content: flex-start; /* Alinha o botão à esquerda */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     height: 5%;
     padding-right: 10px;
 }
