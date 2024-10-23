@@ -51,7 +51,11 @@ html, body {
     height: 10%;
     font-size: 16px;
 }
-    
+ .logo-e-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
 .botao {
     width: 20%;
     height: 100%;
@@ -81,12 +85,7 @@ html, body {
     height: 8.5%;
 }
 
-.logo-e-texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+
 
 .botao-un {
     margin: 10px;
